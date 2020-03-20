@@ -1,4 +1,12 @@
-import { CREATE_POST, FETCH_POSTS, SHOW_LOADER, HIDE_LOADER, SHOW_ALERT, HIDE_ALERT } from "./types";
+import { 
+  CREATE_POST, 
+  FETCH_POSTS, 
+  SHOW_LOADER, 
+  HIDE_LOADER, 
+  SHOW_ALERT, 
+  HIDE_ALERT, 
+  REQUEST_USERS 
+} from "./types";
 
 export function createPost(post) {
   return {
@@ -35,6 +43,12 @@ export function showAlert(text) {
 export function hideAlert() {
   return {
     type: HIDE_ALERT
+  }
+}
+
+export function fetchUsers() {
+  return {
+    type: REQUEST_USERS
   }
 }
 

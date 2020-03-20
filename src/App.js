@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import PostForm from './components/PostForm';
 import Posts from './components/Posts'
 import FetchedPosts from './components/FetchedPosts';
+import FetchedUsers from './components/FetchedUsers';
 import Alert from './components/Alert'
 
 function App() {
@@ -24,6 +25,12 @@ function App() {
         <div className="col">
           <h2>Асинхронные посты</h2>
           <FetchedPosts />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
+          <h2>Асинхронные посты</h2>
+          <FetchedUsers />
         </div>
       </div>
     </div>
