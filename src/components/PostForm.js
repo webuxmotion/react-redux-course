@@ -15,7 +15,7 @@ class PostForm extends React.Component {
     const { title } = this.state
 
     if (!title.trim()) {
-      this.props.showAlert('Some error')
+      this.props.showAlert('Заголовок не может быть пустым')
       return
     }
 

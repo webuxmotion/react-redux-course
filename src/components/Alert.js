@@ -1,9 +1,12 @@
 import React from 'react'
 
-export const Alert = () => {
+const Alert = ({ text }) => {
+
   return (
     <div className="alert alert-warning" role="alert">
-      A simple warning alert—check it out!
+      {text}
     </div>
   )
 }
+
+export default Alert
