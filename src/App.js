@@ -6,6 +6,7 @@ import FetchedPosts from './components/FetchedPosts';
 function App() {
   return (
     <div className="container pt-3">
+      {alert && <Alert />}
       <div className="row">
         <div className="col">
           <PostForm />
